@@ -1,0 +1,39 @@
+body {
+    background-color: dodgerblue;
+    color:white;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+.center {
+    text-align: center;
+    margin:10px;
+}
+
+.centerHeader {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.homeButton {
+    font-size: 24px;
+    border-radius: 7px;
+    padding:8px;
+    color:dodgerBlue;
+    margin:auto;
+    display:block;
+    text-align: center;
+
+}
+
+.recipeStyle {
+    margin:auto;
+    text-align: center;
+}
