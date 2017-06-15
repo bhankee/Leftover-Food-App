@@ -7,7 +7,7 @@ import recipeReducer from '../reducers/reducer-recipe';
 import {inputFood} from '../actions/getRecipe';
 
 
-//worked!
+
 class Home extends React.Component{
 
     constructor(props) {
@@ -42,32 +42,10 @@ class Home extends React.Component{
 
 
                 return(
-                    <div className="recipeStyle">
+                  <div className="recipeStyle">
                     <h1>Recipe</h1>
                     <h2 key={recipe.id}>{recipe.dish}</h2>
                     <h2>{recipe.ingredients} </h2>
-
-                        <form onSubmit={this.handleSubmit}>
-                          <input
-                              className="center"
-                              value={this.state.value}
-                              placeholder="Chicken"
-                              type="text"
-                              onChange={this.handleChange}
-                          />
-                          <button
-                              className="homeButton"
-                              type="submit"
-                              onClick={() =>{
-                                  alert('A name was submitted: ' + this.props.inputFood(recipe))
-                                  this.props.inputFood(recipe)}}>
-                              Awesome
-                          </button>
-                      </form>
-
-
-
-
                   </div>
                );
         });
@@ -80,6 +58,24 @@ class Home extends React.Component{
                 <h1>
                 I want to make my leftover
                 </h1>
+                <form onSubmit={this.handleSubmit}>
+                  <input
+                      className="center"
+                      value={this.state.value}
+                      placeholder="Chicken"
+                      type="text"
+                      onChange={this.handleChange}
+                  />
+                  <button
+                      className="homeButton"
+                      type="submit"
+                      onClick={() =>{
+                          alert('A name was submitted: ' + this.props.inputFood())
+                          this.props.inputFood()}}>
+                      Awesome
+                  </button>
+              </form>
+
                 <div>{this.createRecipeList()}</div>
             </div>
         )

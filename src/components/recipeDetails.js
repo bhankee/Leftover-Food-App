@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 class recipeDetails extends Component {
     render (){
         if(!this.props.recipe){
-            return(<h2>Type in a food</h2>);
+            return(<h2>Type a food</h2>);
         }
         return (
             <div>
