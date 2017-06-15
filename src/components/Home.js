@@ -7,7 +7,7 @@ import recipeReducer from '../reducers/reducer-recipe';
 import {inputFood} from '../actions/getRecipe';
 
 
-
+//worked!
 class Home extends React.Component{
 
     constructor(props) {
