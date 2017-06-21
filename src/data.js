@@ -1,4 +1,5 @@
 
+
     let recipes = [
 
 
@@ -27,4 +28,4 @@
 
 
 
-module.exports = recipes;
+export default recipes;

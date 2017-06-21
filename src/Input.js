@@ -1,13 +1,13 @@
 var recipes = require('./data');
 var React = require('react');
 var ReadInput = require('./readInput');
-var Menu = require('./Menu');
+
 
  var Input = React.createClass({
 
      getInitialState:function(){
          return{
-             userInput:'',
+
              value: ''
          }
      },
@@ -19,23 +19,23 @@ var Menu = require('./Menu');
             } else {
                 this.setState({value: 'Dont Know'})
             }
+            this.props.recipes.map((recipe) => {
+                return (
+                    <ul>
+                    <li key={recipe.id}>{recipe.dish}</li>
+                    </ul>
+                )
+            })
     },
 
 
     render(){
-
-            console.log( this.props.recipes);
-            console.log( this.createMenu);
         return(
-
             <div>
                 <ReadInput
-                    name={this.state.value}
                     onChange={this.handleName} />
                 <button onClick={this.handleName}>Click</button>
                 <h1>{this.state.value}</h1>
-                
-
             </div>
 
         )
