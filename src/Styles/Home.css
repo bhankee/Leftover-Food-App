@@ -10,6 +10,13 @@ h1 {
 input {
     border-radius: 10px;
     font-size: 40px;
+    text-align: center;
+
+}
+.inputBox{
+    text-align: center;
+    margin:100px auto;
+
 }
 
 .center {
