@@ -1,19 +1,12 @@
 var React = require('react');
+var ReadInput = React.createClass ({
 
-
-
-class ReadInput extends React.Component {
-    constructor(props){
-        super(props);
-        this.handleInput = this.handleInput.bind(this);
-    }
 
     handleInput(e){
-        console.log(e.target.value)
         let userInput=e.target.value;
         this.props.onChange(userInput);
-        }
-    
+    },
+
 
   render() {
     return(
@@ -30,7 +23,7 @@ class ReadInput extends React.Component {
  /* ReadInput.propTypes:{
       description =
   }*/
-}
+})
 
 
 

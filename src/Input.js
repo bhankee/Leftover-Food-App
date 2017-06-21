@@ -29,7 +29,7 @@ var ReadInput = require ('./readInput');
 
     render(){
 
-            console.log('myData' +' ' + this.props.myData);
+            console.log('myData' +' ' + this.myData);
             console.log( this.createMenu);
         return(
 
