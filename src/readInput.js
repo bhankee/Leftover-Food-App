@@ -13,7 +13,7 @@ var ReadInput = React.createClass ({
         this.props.onChange(userInput);
     },
 
-    
+
 
 
   render() {
@@ -26,7 +26,9 @@ var ReadInput = React.createClass ({
         />
     </div>
 )
-  }
+  },
+
+  /*const {dish, ingredients} = this.props*/
 
   })
 

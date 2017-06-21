@@ -29,9 +29,14 @@ var ReadInput = require('./readInput');
     },
 
 
+
+
     render(){
+
         return(
             <div>
+                
+
                 <ReadInput
                     onChange={this.handleName} />
                 <button onClick={this.handleName}>Click</button>
@@ -40,10 +45,6 @@ var ReadInput = require('./readInput');
 
         )
     }
-    /*Input.propTypes = {
-         userInput: PropTypes.string,
-         name: PropTypes.string
-     }*/
 
 })
 
