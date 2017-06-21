@@ -3,6 +3,7 @@ import React from 'react';
 import ReadInput from'./readInput';
 
 
+
  var Input = React.createClass({
 
      getInitialState:function(){
@@ -18,6 +19,7 @@ import ReadInput from'./readInput';
                 this.setState({value: 2})
             }
 
+
     },
 
     render(){
@@ -28,7 +30,7 @@ import ReadInput from'./readInput';
 
             console.log(recipe.dish);
             return(
-                <li key={recipe.id=== this.props.value}>{recipe.dish}</li>
+                <li key={recipe.id == this.state.value}>{recipe.dish}</li>
             )
         })
         return(
