@@ -7,29 +7,30 @@ import ReadInput from'./readInput';
 
      getInitialState:function(){
          return{
-
              value: ''
          }
      },
 
     handleName(e){
         if(e === 'beef'){
-                this.setState({value: 'brad'})
+                this.setState({value: 1})
             } else {
-                this.setState({value: 'Dont Know'})
+                this.setState({value: 2})
             }
 
     },
+
     render(){
         console.log(this.props.data);
         const recipes = this.props.data;
+
         const menu = recipes.map(recipe => {
+
             console.log(recipe.dish);
             return(
-                <li key={recipe.id}>{recipe.dish}</li>
+                <li key={recipe.id=== this.props.value}>{recipe.dish}</li>
             )
         })
-
         return(
             <div>
                 <ReadInput
@@ -40,10 +41,8 @@ import ReadInput from'./readInput';
                     {menu}
                 </ul>
             </div>
-
         )
     }
-
 })
 
 
