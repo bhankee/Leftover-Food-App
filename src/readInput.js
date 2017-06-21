@@ -1,4 +1,6 @@
-var React = require('react');
+import React from 'react';
+
+
 var ReadInput = React.createClass ({
     getInitialState:function(){
         return{
@@ -17,6 +19,9 @@ var ReadInput = React.createClass ({
 
 
   render() {
+      const {dish, ingredients} = this.props
+
+
     return(
     <div className='inputBox'>
         <input
@@ -28,7 +33,7 @@ var ReadInput = React.createClass ({
 )
   },
 
-  /*const {dish, ingredients} = this.props*/
+
 
   })
 
@@ -36,4 +41,4 @@ var ReadInput = React.createClass ({
 
 
 
-module.exports = ReadInput;
+export default ReadInput;

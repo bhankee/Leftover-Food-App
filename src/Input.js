@@ -1,6 +1,6 @@
-var recipes = require('./data');
-var React = require('react');
-var ReadInput = require('./readInput');
+import recipes from'./data';
+import React from 'react';
+import ReadInput from'./readInput';
 
 
  var Input = React.createClass({
@@ -13,34 +13,34 @@ var ReadInput = require('./readInput');
      },
 
     handleName(e){
-
         if(e === 'beef'){
                 this.setState({value: 'brad'})
             } else {
                 this.setState({value: 'Dont Know'})
             }
-            this.props.recipes.map((recipe) => {
-                return (
-                    <ul>
-                    <li key={recipe.id}>{recipe.dish}</li>
-                    </ul>
-                )
-            })
+
     },
-
-
-
-
     render(){
+        console.log(this.props.data);
+        /*const recipes = this.props.recipes;
+        const list = recipes.map(recipe => {
+            return (
+
+                <li>{recipe.dish}</li>
+
+            )
+        })*/
 
         return(
             <div>
-                
 
                 <ReadInput
                     onChange={this.handleName} />
                 <button onClick={this.handleName}>Click</button>
                 <h1>{this.state.value}</h1>
+                <ul>
+                    
+                </ul>
             </div>
 
         )
