@@ -13,6 +13,8 @@ var ReadInput = React.createClass ({
         this.props.onChange(userInput);
     },
 
+    
+
 
   render() {
     return(
@@ -26,10 +28,9 @@ var ReadInput = React.createClass ({
 )
   }
 
- /* ReadInput.propTypes:{
-      description =
-  }*/
-})
+  })
+
+
 
 
 

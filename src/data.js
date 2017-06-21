@@ -1,31 +1,30 @@
 
-    let myData = {
+    let recipes = [
 
-        "recipe":{
-            "chicken":[
+
                 {
-                    "id":1,
-                    "dish": "Chicken and Rice",
-                    "ingredients": "Left over chicken"
+                    id:1,
+                    dish: "Chicken and Rice",
+                    ingredients: "Left over chicken"
                 },
                 {
-                    "id":2,
-                    "dish": "Beef and Rice",
-                    "ingredients": "Left over beef"
+                    id:2,
+                    dish: "Beef and Rice",
+                    ingredients: "Left over beef"
 
                 },
 
                 {
-                    "id":3,
-                    "dish": "Rice and Rice",
-                    "ingredients": "Left over beef"
+                    id:3,
+                    dish: "Rice and Rice",
+                    ingredients: "Left over beef"
 
                 }
-            ]
-        }
-    }
+
+
+    ]
 
 
 
 
-module.exports = myData;
+module.exports = recipes;
