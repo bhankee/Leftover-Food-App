@@ -1,5 +1,11 @@
 var React = require('react');
 var ReadInput = React.createClass ({
+    getInitialState:function(){
+        return{
+            userInput:'',
+            name: ''
+        }
+    },
 
 
     handleInput(e){
