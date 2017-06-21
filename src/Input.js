@@ -1,27 +1,14 @@
+var myData = require('./data');
+var React = require('react');
+var ReadInput = require ('./readInput');
+ var Input = React.createClass({
 
-
-import React from 'react';
-import ReadInput from './readInput';
-import {inputFood} from './getRecipe';
-import allReducers from './reducerIndex';
-import {bindActionCreators} from 'redux';
-
-
-
-class Input extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            userInput:'',
-            name: ''
-
-        };
-
-
-        this.handleName = this.handleName.bind(this);
-    }
-
-
+     getInitialState:function(){
+         return{
+             userInput:'',
+             name: ''
+         }
+     },
 
     handleName(e){
 
@@ -30,20 +17,20 @@ class Input extends React.Component{
             } else {
                 this.setState({name: 'Dont Know'})
             }
-    }
+    },
 
     createMenu() {
-        return this.props.recipe.map((recipe) => {
+        return this.props.myData.map((myData) => {
             return (
-                <li key={recipe.id}>{recipe.dish}</li>
+                <li key={myData.id}>{myData.dish}</li>
             )
         })
-    }
+    },
 
     render(){
 
-            console.log(this.props.recipe);
-            console.log('menu' + this.createMenu);
+            console.log('myData' +' ' + this.props.myData);
+            console.log( this.createMenu);
         return(
 
             <div>
@@ -58,19 +45,7 @@ class Input extends React.Component{
 
         )
     }
-}
-
-function mapStateToProps(state){
-    return{
-        recipe: state.recipe
-    };
-
-}
-
-function matchDispatchToProps(dispatch){
-    return bindActionCreators({inputFood: inputFood}, dispatch
-    )
-}
+})
 
 
 export default Input;

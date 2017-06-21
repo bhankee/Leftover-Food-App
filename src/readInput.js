@@ -1,7 +1,5 @@
-import React from 'react';
-import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
-import {inputFood} from './getRecipe';
+var React = require('react');
+
 
 
 class ReadInput extends React.Component {
@@ -12,10 +10,10 @@ class ReadInput extends React.Component {
 
     handleInput(e){
         console.log(e.target.value)
-        var userInput=e.target.value;
-        console.log('userInput' + ' ' +userInput)
+        let userInput=e.target.value;
         this.props.onChange(userInput);
         }
+    
 
   render() {
     return(
@@ -25,23 +23,15 @@ class ReadInput extends React.Component {
         placeholder='Chicken'
         onChange={this.handleInput}
         />
-
-
-
     </div>
 )
   }
+
+ /* ReadInput.propTypes:{
+      description =
+  }*/
 }
 
-function mapStateToProps(state){
-    return{
-        recipe: state.activeRecipe
-    };
-}
 
-function matchDispatchToProps(dispatch){
-    return bindActionCreators({inputFood: inputFood}, dispatch
-    )
-}
 
-export default connect(mapStateToProps)(ReadInput);
+module.exports = ReadInput;
