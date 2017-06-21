@@ -22,24 +22,22 @@ import ReadInput from'./readInput';
     },
     render(){
         console.log(this.props.data);
-        /*const recipes = this.props.recipes;
-        const list = recipes.map(recipe => {
-            return (
-
-                <li>{recipe.dish}</li>
-
+        const recipes = this.props.data;
+        const menu = recipes.map(recipe => {
+            console.log(recipe.dish);
+            return(
+                <li key={recipe.id}>{recipe.dish}</li>
             )
-        })*/
+        })
 
         return(
             <div>
-
                 <ReadInput
                     onChange={this.handleName} />
                 <button onClick={this.handleName}>Click</button>
                 <h1>{this.state.value}</h1>
                 <ul>
-                    
+                    {menu}
                 </ul>
             </div>
 
