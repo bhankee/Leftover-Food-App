@@ -1,6 +1,7 @@
 var recipes = require('./data');
 var React = require('react');
-var ReadInput = require ('./readInput');
+var ReadInput = require('./readInput');
+var Menu = require('./Menu');
 
  var Input = React.createClass({
 
@@ -20,15 +21,6 @@ var ReadInput = require ('./readInput');
             }
     },
 
-    createMenu() {
-        this.props.recipes.map((recipe) => {
-            return (
-                <li key={recipe.id}>{recipe.dish}</li>
-            )
-        })
-    },
-
-
 
     render(){
 
@@ -42,7 +34,7 @@ var ReadInput = require ('./readInput');
                     onChange={this.handleName} />
                 <button onClick={this.handleName}>Click</button>
                 <h1>{this.state.value}</h1>
-                <ul> {this.createMenu}</ul>
+                
 
             </div>
 
