@@ -6,6 +6,15 @@ body {
 h1 {
     text-align: center;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.listStyle {
+    margin:10px;
+}
 
 input {
     border-radius: 10px;
@@ -32,7 +41,7 @@ input {
 .homeButton {
     font-size: 24px;
     border-radius: 7px;
-    padding:8px;
+    padding:0 15px 0 15px;
     color:dodgerBlue;
     margin:auto;
     display:block;

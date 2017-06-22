@@ -1,6 +1,7 @@
 import recipes from'./data';
 import React from 'react';
 import ReadInput from'./readInput';
+import './Styles/Home.css';
 
 
 
@@ -48,9 +49,8 @@ import ReadInput from'./readInput';
             <div>
                 <ReadInput
                     onChange={this.handleName} />
-                <button onClick={this.menu}>Click</button>
-                <h1>{this.state.value}</h1>
-                <ul>
+                <button className="homeButton" onClick={this.menu}>Click</button>
+                <ul className='listStyle'>
                     {menu}
                 </ul>
             </div>
