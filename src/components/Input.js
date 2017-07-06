@@ -1,7 +1,7 @@
-import recipes from'./data';
 import React from 'react';
+import recipes from'../data';
 import ReadInput from'./readInput';
-import './Styles/Home.css';
+import '../Styles/Home.css';
 
 
 

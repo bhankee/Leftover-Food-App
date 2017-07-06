@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Input from'./Input';
-import recipes from'./data';
+import recipes from'../data';
 
 
 class App extends Component{

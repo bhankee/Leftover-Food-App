@@ -7,7 +7,6 @@ var ReadInput = React.createClass ({
         let userInput=e.target.value;
         this.props.onChange(userInput);
     },
-
       render() {
         return(
         <div className='inputBox'>
@@ -20,9 +19,5 @@ var ReadInput = React.createClass ({
         )
       },
   })
-
-
-
-
 
 export default ReadInput;
