@@ -1,12 +1,16 @@
 import React from 'react';
 
 
-var ReadInput = React.createClass ({
+class ReadInput extends React.Component{
+    constructor(props) {
+      super(props);
+      this.handleInput = this.handleInput.bind(this);
 
-    handleInput(e){
-        let userInput=e.target.value;
+  }
+    handleInput(e) {
+        let userInput = e.target.value;
         this.props.onChange(userInput);
-    },
+    }
       render() {
         return(
         <div className='inputBox'>
@@ -17,7 +21,7 @@ var ReadInput = React.createClass ({
             />
         </div>
         )
-      },
-  })
+      }
+  }
 
 export default ReadInput;

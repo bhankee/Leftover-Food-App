@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Input from'./Input';
-import recipes from'../data';
+import recipes from'../data.json';
 
+class App extends React.Component{
+    constructor(props) {
+        super();
 
-class App extends Component{
+    }
     render(){
         return(
             <div>
