@@ -16,12 +16,14 @@ class ReadInput extends React.Component{
         <div className='inputBox'>
             <input
             type='text'
-            placeholder='Chicken'
+            placeholder='Chicken, Beef or Fish'
             onChange={this.handleInput}
             />
         </div>
         )
       }
   }
+
+
 
 export default ReadInput;

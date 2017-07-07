@@ -5,6 +5,7 @@ body {
 
 h1,h3 {
     text-align: center;
+    padding: 10px;
 }
 ul {
     list-style-type: none;
@@ -13,28 +14,33 @@ ul {
 }
 
 .listStyle {
-    margin:10px;
+    margin:5px;
 }
 
 .recipe {
-    font-size: 28px;
+    font-size: 36px;
 }
 
 input {
     border-radius: 10px;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
 
 }
+.recipeMed {
+  font-size: 30px;
+  color: #FCD652;
+}
+
 .foodPic {
-    width: 20%;
+    width: 30%;
     height:auto;
     text-align: center;
-
 }
+
 .inputBox{
     text-align: center;
-    margin:100px auto;
+    margin:10px auto 50px auto;
 
 }
 
@@ -48,16 +54,6 @@ input {
     margin-top: 200px;
 }
 
-.homeButton {
-    font-size: 24px;
-    border-radius: 7px;
-    padding:0 15px 0 15px;
-    color:dodgerBlue;
-    margin:auto;
-    display:block;
-    text-align: center;
-
-}
 
 .recipeStyle {
     margin:auto;
