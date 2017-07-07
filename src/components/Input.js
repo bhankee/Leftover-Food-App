@@ -4,51 +4,50 @@ import '../Styles/Home.css';
 
  class Input extends React.Component{
      constructor(props) {
-         super();
+         super(props);
          this.state = {
              value:''
          }
          this.handleName = this.handleName.bind(this);
      };
+
     handleName(e){
         console.log('handleName')
         if(e === 'chicken'){
                 this.setState({value: 1})
-            } else if (e === 'beef') {
+            } else if (e == 'beef') {
                 this.setState({value: 2})
-            } else if (e === 'rice'){
+            } else if (e === 'fish'){
                 this.setState({value: 3})
             }
 
     }
 
-    const recipes = this.props.data;
-
-    const menu = recipes
-        .filter(recipe => {
-            if(recipe.id === this.state.value){
-            return recipe.dish ;
-        }else {
-            return('Try Again');
-        }
-    })
-    .map(recipe => {
-        return(
-            <div>
-            <li key={recipe.id}>{recipe.dish}</li>
-            <li >{recipe.ingredients}</li>
-            </div>
-        )
-    })
 
     render(){
+        const menu = this.props.data.filter((recipe) => {
+                if(recipe.id === this.state.value){
+                return recipe.dish;
+            }
+        })
+        .map(recipe => {
+            return(
+                <div>
+                    <img src={recipe.picture} className="foodPic"></img>
+                    <li key={recipe.id} className="recipe">{recipe.dish}</li>
+                    <li >{recipe.ingredients}</li>
+                    <p >{recipe.process}</p>
+
+                </div>
+            )
+        })
+
         return(
             <div>
                 <ReadInput
                     onChange={this.handleName} />
-                <button className="homeButton" onClick={this.menu}>Click</button>
                 <ul className='listStyle'>
-                    {this.props.menu}
+                    {menu}
                 </ul>
             </div>
         )

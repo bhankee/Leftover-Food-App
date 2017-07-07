@@ -1,6 +1,7 @@
 import React from 'react';
 import Input from'./Input';
-import recipes from'../data.json';
+import recipes from'../data';
+import Header from './header'
 
 class App extends React.Component{
     constructor(props) {
@@ -10,6 +11,7 @@ class App extends React.Component{
     render(){
         return(
             <div>
+                <Header />
                 <Input data={recipes} />
             </div>
         )
