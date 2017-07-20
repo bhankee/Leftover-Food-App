@@ -1,61 +1,72 @@
 body {
-    background-color: dodgerblue;
-    color:white;
+	background-image: url('../images/background.jpg');
+	background-size: 2000px;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
 }
 
-h1,h3 {
-    text-align: center;
-    padding: 10px;
+h1,
+h3 {
+	text-align: center;
+	padding: 10px;
 }
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 .listStyle {
-    margin:5px;
+	margin: 5px;
 }
 
 .recipe {
-    font-size: 36px;
+	font-size: 36px;
+	color: #05325e;
+	font-weight: bold;
 }
 
 input {
-    border-radius: 10px;
-    font-size: 50px;
-    text-align: center;
-
+	border-radius: 10px;
+	font-size: 36px;
+	text-align: center;
 }
 .recipeMed {
-  font-size: 30px;
-  color: #FCD652;
+	font-size: 30px;
+	color: #414549;
 }
 
 .foodPic {
-    width: 30%;
-    height:auto;
-    text-align: center;
+	width: 30%;
+	height: auto;
+	text-align: center;
 }
 
-.inputBox{
-    text-align: center;
-    margin:10px auto 50px auto;
-
+.inputBox {
+	text-align: center;
+	margin: 10px auto 50px auto;
 }
 
 .center {
-    text-align: center;
-    margin:10px;
+	text-align: center;
+	margin: 10px;
 }
 
 .centerHeader {
-    text-align: center;
-    margin-top: 200px;
+	text-align: center;
+	margin-top: 200px;
 }
 
-
 .recipeStyle {
-    margin:auto;
-    text-align: center;
+	margin: auto;
+	text-align: center;
+}
+
+.foodResults {
+	width: 75%;
+	height: auto;
+	margin: 400px auto auto auto;
+	background: rgba(255, 255, 255, 0.7);
+	padding: 25px;
 }
