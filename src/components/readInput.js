@@ -14,7 +14,7 @@ class ReadInput extends Component {
 			<div className="inputBox">
 				<input
 					type="text"
-					placeholder="Chicken, Beef or Fish"
+					placeholder="CHICKEN BEEF OR FISH"
 					onChange={this.handleInput}
 				/>
 			</div>
