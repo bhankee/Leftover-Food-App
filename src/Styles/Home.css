@@ -1,6 +1,6 @@
 body {
 	background-image: url('../images/background.jpg');
-	background-size: 2000px;
+	background-size: 1000px;
 	background-repeat: no-repeat;
 	background-position: center;
 	color: white;
@@ -33,7 +33,7 @@ input {
 	text-align: center;
 }
 .recipeMed {
-	font-size: 30px;
+	font-size: 80px;
 	color: #414549;
 }
 
